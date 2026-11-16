@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angelo & Maribel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<!-- ===== IMAGEN DE FONDO ===== -->
+<img id="fondoImg" src="fondo.jpg" alt="" style="--opacidad:.55;--difuminado:4px;object-position:44% 50%">
+<canvas id="fondo"></canvas>
+
+<!-- ============ ACCESO: Solo correo y clave ============ -->
+<section id="login">
+  <div class="caja">
+    <h1>Angelo y Maribel</h1>
+    <p class="sub">Nuestro rincón secreto</p>
+    <div id="paso1">
+      <form id="manual">
+        <p>Ingresa tu correo autorizado</p>
+        <input type="email" id="correoManual" placeholder="tu correo" required>
+        <button>Continuar</button>
+      </form>
+    </div>
+    <form id="formClave" hidden>
+      <p>Hola mi amor, bienvenida! Escribe la clave:</p>
+      <input type="password" id="clave" placeholder="Clave" autocomplete="off" required>
+      <button>Entrar</button>
+    </form>
+    <p id="error" role="alert"></p>
+  </div>
+</section>
+
+<!-- ============ CONTENIDO ============ -->
+<main id="app" hidden>
+  <nav>
+    <a href="#inicio">Inicio</a><a href="#fotos">Fotos</a><a href="#videos">Videos</a>
+    <a href="#audios">Audios</a><a href="#pdfs">PDF</a><a href="#historia">Nuestro libro</a>
+    <a class="drive" href="https://drive.google.com/drive/folders/1FPN_GEtTo_hL2Sd59PImJMYEnZ5yYKpF?usp=sharing" target="_blank" rel="noopener">Drive ↗</a>
+    <button id="salir">Salir</button>
+  </nav>
+
+  <header id="inicio" class="vista">
+    <h1>Angelo <i>&amp;</i> Maribel</h1>
+    <p class="sub">Juntos desde el 11 de enero de 2026, 10:46 p. m.</p>
+    <div id="reloj">
+      <div><b>00</b><span>meses</span></div><div><b>00</b><span>días</span></div>
+      <div><b>00</b><span>horas</span></div><div><b>00</b><span>minutos</span></div>
+      <div><b>00</b><span>segundos</span></div>
+    </div>
+  </header>
+
+  <!-- ===== FOTOS ===== -->
+  <section id="fotos" class="vista">
+    <h2>Nuestras fotos</h2>
+    <div class="grid galeria">
+      <figure data-tipo="foto"><img src="IMG/1.jpg" alt="Foto 1" loading="lazy"><figcaption>Foto 1</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/2.jpg" alt="Foto 2" loading="lazy"><figcaption>Foto 2</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/3.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/4.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/5.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/6.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/7.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/8.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/9.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/10.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/11.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/12.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/13.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/14.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/15.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/16.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/17.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/18.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/19.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/20.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/21.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/22.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/23.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/24.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/25.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/26.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/27.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/28.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/29.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/30.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/31.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/32.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/33.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/34.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/35.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/36.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/37.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/38.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/39.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/40.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/41.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/42.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/43.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/44.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/45.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/46.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/47.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/48.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/49.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/50.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/51.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/52.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/53.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/54.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/55.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/56.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/57.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/58.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/59.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/60.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/61.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure><figure data-tipo="foto"><img src="IMG/28.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/62.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/63.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/64.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/65.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/66.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/67.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/68.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/69.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/70.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/71.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+      <figure data-tipo="foto"><img src="IMG/72.jpg" alt="Foto 3" loading="lazy"><figcaption>Foto 3</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ===== VIDEOS ===== -->
+  <section id="videos" class="vista">
+    <h2>Nuestros videos</h2>
+    <div class="grid galeria">
+      <figure data-tipo="video"><video src="VIDEOS/1.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 1</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/2.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 2</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/3.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 3</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/4.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 4</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/5.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 5</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/6.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 6</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/7.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 7</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/8.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 8</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/9.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 9</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/10.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 10</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/11.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 11</figcaption></figure>
+      <figure data-tipo="video"><video src="VIDEOS/12.mp4" preload="metadata" muted playsinline></video><span class="play">▶</span><figcaption>Video 12</figcaption></figure>
+
+    </div>
+  </section>
+
+  <!-- ===== AUDIOS ===== -->
+  <section id="audios" class="vista">
+    <h2>Nuestras canciones y audios</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>One Day of my love</h3>
+        <audio src="AUD/One Day of my love 3.m4a" controls preload="metadata"></audio>
+        <a class="dl" href="AUD/One Day of my love 3.m4a" download>Descargar</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PDF ===== -->
+  <section id="pdfs" class="vista">
+    <h2>Cartas y documentos</h2>
+    <div class="grid">
+      <article class="card pdf">
+        <h3>El amor después de las 10</h3>
+        <button data-pdf="LIBROS/EL AMOR DESPUES DE LAS 10_46 - Angelo Sotelo.pdf">Leer</button>
+        <a class="dl" href="LIBROS/EL AMOR DESPUES DE LAS 10_46 - Angelo Sotelo.pdf" download>Descargar</a>
+      </article>
+      <article class="card pdf">
+        <h3>Hasta que la distancia habló</h3>
+        <button data-pdf="LIBROS/HASTA QUE LA DISTANCIA HABLÓ - Angelo Sotelo.pdf">Leer</button>
+        <a class="dl" href="LIBROS/LIBROS/HASTA QUE LA DISTANCIA HABLÓ - Angelo Sotelo.pdf" download>Descargar</a>
+      </article>
+    </div>
+  </section>
+
+<!-- ===== LIBRO DE NUESTRA HISTORIA ===== -->
+<section id="historia" class="vista">
+    <h2>Nuestra Historia Resumida</h2>
+    
+    <!-- Añadimos la clase grid para que se divida en tarjetas -->
+    <div id="paginas" class="grid">
+        
+        <!-- Página 1 -->
+        <article class="card historia-card">
+            <time datetime="2025-10-20">Lunes, 20 de octubre de 2025</time>
+            <p>El 20 de octubre nos vimos por primera vez, fue por la tarde a las 3:40 pm aproximadamente.</p>
+        </article>
+
+        <!-- Página 2 -->
+        <article class="card historia-card">
+            <time datetime="2025-10-21">Martes, 21 de octubre de 2025</time>
+            <p>La escribí al Whatsapp para poder conocerla más a fondo y hablarla del negocio.</p>
+        </article>
+
+        <article class="card historia-card">
+            <time datetime="2025-11-08">Sábado, 8 de noviembre de 2025</time>
+            <p>Ella asistió al primer evento de DXN, nos encontramos a las 3:30 en el parque botánico; a las 7:10 salió del evento a su casa y se perdió en el trayecto.</p>
+        </article>
+
+        <article class="card historia-card">
+            <time datetime="2025-11-10">Lunes, 10 de noviembre de 2025</time>
+            <p>Tuvimos nuestra primera salida juntos, quedamos en el Mall plaza a las 4:00 pm, recorrimos una parte de este centro y terminamos explorando el Love UP.</p>
+        </article>
+
+        <article class="card historia-card">
+            <time datetime="2025-12-13">Sábado, 13 de diciembre de 2025</time>
+            <p>Ella asistió al segundo evento de DXN.</p>
+        </article>
+
+        <article class="card historia-card">
+            <time datetime="2025-12-22">Lunes, 22 de diciembre de 2025</time>
+            <p>Tuvimos nuestra segunda salida juntos, quedamos en el parque botánico a las 3:00pm, ella me entregó un dibujo de Goku y un regalo de peluche, era Chimuelo.</p>
+        </article>
+
+        <article class="card historia-card">
+            <time datetime="2025-12-23">Martes, 23 de diciembre de 2025</time>
+            <p>Ella viajó a Pataz, su tierra que la vio nacer y yo prometí esperarla.</p>
+        </article>
+
+        <article class="card historia-card">
+            <time datetime="2025-12-30">Martes, 30 de diciembre</time>
+            <p>Hice un cambio de look, me corté el cabello tanto que casi quedo calvo.</p>
+        </article>
+
+    </div>
+</section>
+
+</main>
+
+<!-- Visor de fotos y PDF -->
+<div id="visor" hidden>
+  <div class="barra">
+    <span id="visorTit"></span>
+    <div class="zoom"><button id="zMenos" aria-label="Alejar" title="Alejar (−)">−</button><button id="zPct" title="Tamaño completo (0)">100%</button><button id="zMas" aria-label="Acercar" title="Acercar (+)">+</button></div>
+    <a id="visorDl" download>Descargar</a>
+    <button id="visorFs">Pantalla completa</button>
+    <button id="visorX" aria-label="Cerrar">✕</button>
+  </div>
+  <button id="ant" aria-label="Anterior">‹</button>
+  <div id="visorCont"></div>
+  <button id="sig" aria-label="Siguiente">›</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
